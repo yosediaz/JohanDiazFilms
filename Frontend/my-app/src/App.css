@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Playfair+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap');
+.App{
+  height: 2500px;;
+  
+}
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  
+  /* Para que el scrolleo en la one page sea suave */
+  scroll-behavior: smooth;
+}
+
+
+/*Barra de navegación*/
+.navBg{
+    background: black;
+    height: 130px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#lista{
+  color: rgb(219, 243, 6);
+  font-family: 'Caveat', cursive;
+  font-size: 22px;
+  padding: 7px 13px;
+  display: inline-block;
+  line-height: 120px;
+  margin: 0 5px;
+}
+
+
+#iconos{
+  border-radius: 60px;
+  margin-top: 45px;
+  
+
+  
+}
+
+div.redes{
+  padding-left: 400px;
+  
+  
+}
+
+/* Agrega transiciones suaves en las imágenes cuando pasas el mouse sobre ellas */
+#iconos {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Define los efectos de escala y opacidad cuando el mouse está encima */
+#iconos:hover {
+  transform: scale(1.2); /* Escala la imagen al 120% del tamaño original */
+  opacity: 0.8; /* Reduce la opacidad al 80% */
+}
+
+/* Cambia el color de fondo y el color del texto de los enlaces cuando se pasa el mouse sobre ellos */
+#lista {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Define los colores de fondo y de texto cuando el mouse está encima */
+#lista:hover {
+  background-color: rgb(219, 243, 6); /* Cambia el color de fondo a naranja al pasar el mouse */
+  color: #0f0f0f; /* Cambia el color del texto a blanco al pasar el mouse */
+}
+
+
+/*CCS INICIO*/
+
+.descripcion{
+  background-color: rgba(208, 214, 214, 0.884);
+}
+
+.texto{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 30px;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 35px;
+  letter-spacing: .01em;
+  line-height: 2em;
+  text-transform: none;
+  color: #54543b;
+  font-family:  'Cedarville Cursive', cursive;
+  font-family: 'Pacifico', cursive;
+
+}
+
+.texto1{
+  text-align: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 30px;
+  font-size: 20px;
+  padding-bottom: 30px;
+  font-family: 'Caveat', cursive;
+  color: #54543b;
+
+}
+
+.contenedor{
+  background-color: #0f0f0f;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  height: 500px;
+  
+}
+.servicios{
+  text-align: center;
+  color: aliceblue;
+  font-size: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 22px;
+
+}
+.servicios img {
+  width: 90px;
+  transition: transform 0.3s ease; 
+}
+
+.servicios img:hover {
+  transform: scale(1.2); 
+}
+
+
+.contenedorformulario{
+  background-color: rgba(208, 214, 214, 0.884);
+
+}
+
+.parrafo{
+  padding-top: 60px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #54543b;
+  
+}
+
+.formulario{
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  color: #54543b;
+}
+
+.textoformulario{
+
+  padding-bottom: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+  color: #54543b;
+
+
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  font-size: 20px;
+}
+
+.seccionesformulario{
+  padding-top: 20px;
+}
+
+button{ 
+  text-align: center;
+  border-radius: 20%;
+  margin-left: 5px;
+}
+
+
+
+/*footer*/
+
+.footer{
+  background-color:rgba(219, 243, 6, 0.753);
+  text-align: center;
+  font-family: 'Caveat', cursive;
+  display: flex;
+  padding-top: 15px;
+ 
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 10px;
+  height: 130px;
+  width: 100%;
+  position:fixed;
+  bottom: 0;
+
+
+  
+}
+
+.verificarzona{
+  font-size: 15px;
+  font-family: 'Caveat', cursive;
+}
+
+.horarios{
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 450px;
+  
+
+}
+
+.datos{
+  width: 450px;
+}
+
+.mapafooter{
+  width: 450px;
+}
+
+/*Componente FormExample*/
+
+.formExample{
+  padding-left: 90px;
+  padding-right: 90px;
+  background-color: rgba(208, 214, 214, 0.884);
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+.carousel{
+  padding-left: 80px;
+  background-color: #0f0f0f;
+}
+
+.componenteimagen{
+  display: flex;
+  height: 20px;
+  width: 30px;
+}
+
+
+
+
