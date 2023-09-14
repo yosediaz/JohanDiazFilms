@@ -6,7 +6,7 @@ const cors = require('cors')
 const app = express()
 app.use(cors(
   {
-    origin: ["https://deploy-merm-lwhp.vercel.app"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true 
 
