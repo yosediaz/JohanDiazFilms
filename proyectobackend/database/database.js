@@ -1,25 +1,5 @@
 //database.js
 const mongoose = require('mongoose');
-const express = require('express')
-const cors = require('cors')
-
-const app = express()
-app.use(cors(
-  {
-    origin: ["https://deploy-merm-lwhp.vercel.app"],
-    methods: ["POST", "GET"],
-    credentials: true 
-
-  }
-
-));
-app.use(express.json())
-
-app.get("/", (req, res) => {
-  res.json("Hello");
-})
-
-
 
 
 const dbConnection = async () => {
