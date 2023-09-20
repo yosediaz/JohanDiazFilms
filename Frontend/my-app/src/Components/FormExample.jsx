@@ -59,6 +59,7 @@ function FormExample() {
 
   return (
     <Form noValidate validated={validated} onSubmit={handleSubmit} className='formExample'>
+      
       <Row className="mb-3">
         <Form.Group as={Col} md="4" controlId="nombreyApellido">
           <Form.Label>Nombre y Apellido</Form.Label>

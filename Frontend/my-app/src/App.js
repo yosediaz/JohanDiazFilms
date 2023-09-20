@@ -10,16 +10,16 @@ function App() {
   return (
     <div className="App">
       
-<BrowserRouter>
-<Routes>
-  <Route path='/' element={ <NavBarExample /> }>
-    <Route index element={ <Inicio /> } />
-    <Route path='videos' element={ <Videos /> } />
-    <Route path='fotos' element={ <Fotos /> } />
-    <Route path='*' element={ <Navigate replace to="/"/> }/>
-  </Route>
-</Routes> 
-</BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={ <NavBarExample /> }>
+          <Route index element={ <Inicio /> } />
+          <Route path='videos' element={ <Videos /> } />
+          <Route path='fotos' element={ <Fotos /> } />
+          <Route path='*' element={ <Navigate replace to="/"/> }/>
+          </Route>
+        </Routes> 
+      </BrowserRouter>
 
     </div>
   );

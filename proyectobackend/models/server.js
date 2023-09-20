@@ -40,7 +40,7 @@ class Server {
     this.app.use(express.json()); 
 
     
-    this.app.use('/imagenes', express.static('Backend/Imagenes'));
+    this.app.use('/imagenes', express.static('public/Imagenes'));
 
   }
 

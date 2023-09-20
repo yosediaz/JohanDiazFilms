@@ -47,11 +47,11 @@ const Inicio = () => {
             
             <FormExample/>
          </div>
-    <div></div>
-    <div></div>
+    
+   
     
          
-    </div>
+      </div>
 
     )
     
