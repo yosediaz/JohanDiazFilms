@@ -31,7 +31,7 @@ const Maps = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://backend-deploy-w305.onrender.com', { address });
+      const response = await axios.post('https://backend-deploy-w305.onrender.com/', { address });
       setMessage(response.data.mensaje);
     } catch (error) {
       console.error('Error al consultar la zona:', error);
