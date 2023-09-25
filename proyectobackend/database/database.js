@@ -3,15 +3,11 @@ const mongoose = require('mongoose');
 
 
 
-
-
 const dbConnection = async () => {
   try {
 
-    await mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    await mongoose.connect(process.env.MONGODB_CONNECTION_STRING); 
+     
 
     console.log(`Base de datos conectada`);
   } catch (error) {
