@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // Asegúrate de tener axios instalado
+import axios from 'axios'; 
 
 function MapComponent() {
   const [mapImage, setMapImage] = useState(null);
@@ -7,7 +7,7 @@ function MapComponent() {
   useEffect(() => {
     const fetchMapImage = async () => {
       try {
-        const response = await axios.get('/api/zona/mapa'); // Reemplaza '/api/zona/mapa' con la URL correcta de tu backend
+        const response = await axios.get('https://backend-deploy-w305.onrender.com/'); 
         if (response.status === 200) {
           setMapImage(URL.createObjectURL(new Blob([response.data])));
         } else {

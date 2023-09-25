@@ -26,7 +26,7 @@ function FormExample() {
     }
 
     try {
-      const response = await axios.post('/api/usuarios', formData);
+      const response = await axios.post('https://backend-deploy-w305.onrender.com/', formData);
 
       if (response.status === 200) {
         alert('Usuario creado exitosamente');
